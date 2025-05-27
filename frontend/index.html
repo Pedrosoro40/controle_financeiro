@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <title>Controle Financeiro</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
@@ -22,9 +23,12 @@
     </form>
 
     <h2>Resumo</h2>
-    <p>Entradas: R$ <span id="in">0.00</span></p>
-    <p>Saídas: R$ <span id="out">0.00</span></p>
-    <p>Saldo: R$ <span id="total">0.00</span></p>
+      <div>
+        <p><strong>Entradas:</strong> R$ <span id="in">0.00</span></p>
+        <p><strong>Saídas:</strong> R$ <span id="out">0.00</span></p>
+        <p><strong>Saldo:</strong> R$ <span id="total">0.00</span></p>
+      </div>
+
 
     <canvas id="chart" width="400" height="300"></canvas>
 
