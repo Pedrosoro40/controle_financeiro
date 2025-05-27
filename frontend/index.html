@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Controle Financeiro</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Controle Financeiro</h1>
+
+    <form id="form">
+      <input type="text" id="desc" placeholder="Descrição" required />
+      <input type="number" id="amount" placeholder="Valor" required />
+      <input type="date" id="date" required />
+      <select id="type">
+        <option value="entrada">Entrada</option>
+        <option value="saida">Saída</option>
+      </select>
+      <button type="submit">Adicionar</button>
+    </form>
+
+    <h2>Resumo</h2>
+    <p>Entradas: R$ <span id="in">0.00</span></p>
+    <p>Saídas: R$ <span id="out">0.00</span></p>
+    <p>Saldo: R$ <span id="total">0.00</span></p>
+
+    <canvas id="chart" width="400" height="300"></canvas>
+
+    <h2>Transações</h2>
+    <ul id="transactions"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
